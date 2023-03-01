@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Navigation */
+nav{
+    height: 70px;
+    width: 100%
+    background-color: rgb(227, 230, 243);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+.left-nav h2 {
+    font-size: 2rem;
+    padding: 0 100px;
+}
+li {
+    list-style: none;    
+}
+a {
+    text-decoration: none;
+}
+.manu-bar{
+    display: none;
+}
+.right-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 100px;
+}
+.right-nav ul a {
+    font-size: 1.2rem;
+    color: black;
+} 
+.right-nav ul a:hover {
+    text-decoration: underline;
+    color: rgb(5, 171, 5);
+}
+.cart-icon, .search-icon img {
+    width: 20px;
+}
+
+/* Main section */
+
+.main {
+    background-image: url(./bg.webp);
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+    text-align: center;  
+}
+.main-item {
+    position: relative;
+    top: 40%;
+}
+.main-item h2 {
+    font-size: 2.5rem;
+}
+.main-item button {
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 20px
+    color: white;
+}
+/* featured-products */
+
+.featured-products {
+    height: 150px;
+    text-align: center;
+}
+.featured-products h2 {
+    font-size:2.5rem;
+    margin-top: 40px;
+}
+.featured-products p {
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+/* Fishon section */
+.fishon {
+    width: 100%
+}
+.container {
+    margin-inline: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.product {
+    cursor: pointer;
+    width: 200px
+    box-shadow: 1px 0px 4px 1px rgb( 230, 228, 224);
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+.product: hover {
+    box-shadow: 30px 30px 20px rgb(221, 214, 214);
+    transition:0.2s ease-in-out;
+}
+.shirt img {
+    width: 100%;
+    height:200px;
+    border-radius: 30px;  
+}
+.product p {
+    font-size: 12px;
+}
+.star-icon {
+    display: flex;
+    justify-content: start;
+}
+.star-icon img {
+    width: 20px;
+}
+.price p {
+    font-size:20px;
+    font-weight: 700;
+    color: rgb(13, 137, 13);
+}
+
+/* Page change */
+.page {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.box {
+    background-color: rgb(14, 156, 151);
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.box p {
+    font-size: 20px;
+}
+.box: hover {
+    background-color: rgb(54, 189, 185);
+}
+
+/* Sign up section */
+.signup {
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+.signup h3 {
+    padding: 15px 0;
+}
+.signup p {
+    margin: 10px 0;
+}
+.signup input {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.signup button {
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: rgb(14, 156, 151);
+    cursor: pointer;
+    color: white;
+}
+.signup button: hover{
+    background-color: rgb(14, 110, 107);
+}
+
+/* Electronic heading section */
+
+.electronics-heading {
+    text-align: center;
+    margin-top: 30px;
+}
+.electronics-heading h2 {
+    font-size: 2rem;
+}
+.electronics-heading p {
+    margin-top: 20px 0;
+    margin-bottom: 50px;
+    color: rgb(112, 110, 110);
+    font-size: 1rem;
+}
+
+/* Connect */
+.connect {
+    text-align: center;
+}
+.connect h3 {
+   font-size: 1.5rem;
+   margin: 10px 0; 
+}
+.connect p {
+    font-size: 0.8rem;
+    margin-bottom: 40px;
+    color: rgb(139, 132, 132);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 100px;
+}
+.royalson h3 {
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+.royalson ul li {
+    cursor: pointer;
+}
+.royalson ul li: hover {
+    color: rgb(12, 185, 12);
+}
+.royal-icon {
+    display: flex;
+    gap: 10px;
+}
+.royal-icon img {
+    width: 30px;
+    cursor: pointer;
+    margin-block: 10px;
+}
+
+/*Sub footer */
+
+.sub-footer {
+    height: 50px
+    background-color: rgb(2, 147, 147);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Media Quary */
+@media(max-width: 1024px){
+    nav {
+      max-width: 1024px;  
+    }
+    .left-nav h2 {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+    .right-nav ul{
+        padding: 0 30px
+    }
+    .main{
+        max-width: 1024px;
+    }
+}
+
+@media(max-width:768px){
+    .right-nav ul{
+        display: none;
+    }
+    .manu-bar {
+        display: none;
+        width: 40px;
+        margin-right: 20px;
+    }
+}
